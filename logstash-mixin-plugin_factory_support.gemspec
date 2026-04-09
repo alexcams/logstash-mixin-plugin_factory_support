@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name          = 'logstash-mixin-plugin_factory_support'
-  s.version       = '1.0.0'
+  s.version         = ::File.read('version').split("\n").first
   s.licenses      = %w(Apache-2.0)
   s.summary       = "API-stable Plugin Factory support adapter for Logstash plugins"
   s.description   = "This gem is meant to be a dependency of any Logstash plugin that wishes to use a Plugin Factory to instantiate inner plugins that are fully-contextualized in the pipeline that the outer plugin is running in"
